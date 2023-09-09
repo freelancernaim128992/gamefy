@@ -186,3 +186,74 @@ nav {
     bottom: -50px;
     width: 200px;
 }
+
+/* Game Catagory Section Style  */
+.catagory-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.catagory-name {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.catagory-name:hover {
+    border: 1px solid #b252d9;
+    border-radius: 50px;
+}
+
+.catagory-name img {
+    width: 40px;
+}
+
+/* Footer Style  */
+footer {
+    background-color: #0b0222;
+    padding: 80px 0;
+}
+
+.footer-container {
+    width: 900px;
+    margin: auto;
+}
+
+.logo-area {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-link ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.menu-link ul li {
+    margin-right: 70px;
+}
+
+.social-link ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.social-link ul li {
+    margin-left: 30px;
+}
+
+.social-link ul li a img {
+    width: 40px;
+}
+
+.footer-container p {
+    text-align: center;
+}
