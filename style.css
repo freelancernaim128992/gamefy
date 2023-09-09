@@ -162,3 +162,27 @@ nav {
     opacity: 1;
     transition: 0.5s;
 }
+
+/* Play Games Section Style  */
+.play-game-desc {
+    text-align: end;
+    width: 300px;
+    margin: auto;
+}
+
+.play-game-desc p {
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+.play-game-img {
+    position: relative;
+    width: 500px;
+}
+
+.game-img2 {
+    position: absolute;
+    left: -100px;
+    bottom: -50px;
+    width: 200px;
+}
