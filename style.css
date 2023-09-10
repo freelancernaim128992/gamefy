@@ -63,6 +63,10 @@ nav {
     padding: 30px 0;
 }
 
+.logo-container {
+    display: flex;
+}
+
 .logo {
     width: 60px;
     height: 35px;
@@ -85,10 +89,13 @@ nav {
     margin-right: 30px;
 }
 
-.bg-link {
+.social-icon-container {
     background-color: #e7e6e9;
     padding: 10px 20px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .banner {
@@ -199,11 +206,16 @@ nav {
     padding: 10px;
     justify-content: space-around;
     align-items: center;
+    transition: .5s;
 }
 
 .catagory-name:hover {
     border: 1px solid #b252d9;
     border-radius: 50px;
+}
+
+.catagory-name:hover.catagory-name p {
+    color: #b252d9;
 }
 
 .catagory-name img {
@@ -227,16 +239,21 @@ footer {
     justify-content: center;
 }
 
-.menu-link ul {
+.menu-link ul,
+.menu-link-condition ul {
     list-style: none;
-    display: flex;
+    display: grid;
     color: white;
     justify-content: center;
     padding: 40px 0;
 }
 
-.menu-link ul li {
-    margin-right: 70px;
+.menu-link ul {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.menu-link-condition ul {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .social-link ul {
@@ -256,4 +273,102 @@ footer {
 
 .footer-container p {
     text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsive Style for Mobile Vesion  */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .games-box {
+        width: 70%;
+    }
+
+    .play-game-img {
+        width: 70%;
+    }
+
+    .game-img2 {
+        left: -46px;
+        bottom: -45px;
+        width: 8rem;
+    }
+
+    .catagory-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .menu-link ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .menu-link-condition ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Responsive Style for Tablet Vesion  */
+@media screen and (min-width: 720px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .games-box {
+        width: 40%;
+    }
+
+    .play-game-img {
+        width: 75%;
+    }
+
+    .game-img2 {
+        left: -46px;
+        bottom: -45px;
+        width: 10rem;
+    }
+
+    .catagory-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .menu-link ul {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+
+    .menu-link-condition ul {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
 }
